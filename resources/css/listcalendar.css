@@ -1,0 +1,73 @@
+.page-wrap {
+    height: 100%;
+    overflow: auto;
+    padding: 10%;
+}
+
+ul {list-style-type: none;}
+
+.month {
+    padding: 25px;
+    /*width: 100%;*/
+    background: #333;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.month ul li {
+    color: whitesmoke;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    height: 100px;
+    border: solid black 1px;
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color:#777;
+}
+
+img {
+    width: 40%;
+    /*postion: absolute;*/
+    vertical-align: text-top;
+}
+
+/*these limits are to prevent the days to bump down*/
+@media screen and (max-width:1050px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 600px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}

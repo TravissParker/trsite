@@ -1,0 +1,101 @@
+.page-wrap {
+    height: 100%;
+}
+
+.day {
+    border: 1px solid black;
+}
+
+.cal-frame {
+    width: 80%;
+    margin: auto;
+}
+
+.month-label {
+    text-align: center;
+}
+
+.month-label h2 {
+    margin: auto;
+    font-size: 2em;
+    color: whitesmoke;
+    background-color: #333;
+}
+
+[class*="week-"] {
+    padding: 0;
+    height: 25%;
+}
+
+.week-row > .day {
+    height: 100px;
+}
+
+.week-row > .day p {
+    padding: 2px;
+}
+
+.week-labels-full > .day, .week-labels-short > .day {
+    margin: auto;
+    width: 14%;
+    float: left;
+    text-align: center;
+}
+
+.week-row {
+    clear: left;
+    overflow: auto;
+}
+
+.day {
+    width: 14%;
+    float: left;
+}
+
+.other-month {
+    background-color: navajowhite;
+}
+
+.food-day {
+    position: relative;
+}
+
+.img-link {
+    margin: auto;
+    position: absolute;
+    height: auto;
+    width: 60%;
+    left: 20%;
+    display: block;
+}
+
+.week-labels-short {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .week-labels-short {
+        display: flex;
+    }
+
+    .week-row > .day  {
+        height: 50px;
+    }
+
+    .week-labels-full {
+        display: none;
+    }
+
+    .img-link {
+        margin: 0;
+        height: auto;
+        width: 70%;
+        top: 30%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    p, .month-label  {
+        font-size: 0.75em;
+    }
+}

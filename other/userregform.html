@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Setup user</title>
+</head>
+<body>
+
+  <?php
+    include 'formprocess.php';
+    ?>
+
+  <p>Submit the form below to set up your account. Marked field (*) are required.</p>
+
+
+  <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+    Username: <input type="text" name="username"><span><?php echo " * " . $usernameErr;?></span>
+    <br /><br />
+    Password: <input type="text" name="password"><span><?php echo " * " . $passwordErr;?></span>
+    <br /><br />
+    <input type="submit">
+  </form>
+
+  <?php
+
+  ?>
+
+</body>
+</html>

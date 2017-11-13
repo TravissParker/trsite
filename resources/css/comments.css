@@ -1,0 +1,33 @@
+.comment-wrap {
+    max-width:60%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.post {
+    border: solid black 1px;
+    background-color: powderblue;
+    margin-bottom: 10px; /*These two lines need to be relative*/
+    margin-top: 20px;
+}
+
+.date-from div {
+    display: inline-block;  /*This to make date and from float to each other.*/
+}
+
+.user-pic-fig {
+    margin: 1%;
+    max-width: 10%;
+    display: inline-block;
+}
+
+.user-pic-fig img {
+    width: 100%;
+}
+
+.comment {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+    width: 80%;
+}

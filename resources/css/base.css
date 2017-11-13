@@ -1,0 +1,76 @@
+body {
+    font-family: "Californian FB", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    color: black;
+    background-color: white;
+    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+        linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+    background-size: 50px 50px;
+    min-width: 320px;
+}
+
+a {
+    cursor: pointer;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+html, body {
+    /*height: 100%;*/
+}
+
+.page-wrap {
+    /*height: 100%;*/
+    width: 70%;
+    padding-top: 6%;
+    /*padding-bottom: 10%;*/
+    /*Keeps page-wrap centered H*/
+    background-color: antiquewhite;
+    /*padding-bottom: 2000px;*/
+    /*margin: auto auto -1000px;*/
+    margin: auto;
+    overflow: hidden;
+
+}
+
+/*A uniform text wrapper*/
+.page-wrap > .text-wrap {
+    width: 60%;
+    margin: auto; /*Keeps text-wrap centered H*/
+}
+
+h3 {
+    font-size: 2rem;
+    padding-top: 2%; /*Is this ok responsively*/
+    padding-bottom: 1%;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
+}
+
+@media only screen and (max-width: 480px) {
+    .page-wrap {
+        width: 90%;
+        height: 100%;
+    }
+
+    .page-wrap > .text-wrap {
+        width: 85%;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+        padding-top: 8%; /*Is this ok responsively*/
+        padding-bottom: 4%;
+    }
+}
