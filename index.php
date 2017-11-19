@@ -1,9 +1,15 @@
+<?php
+  include 'nav.php';
+  include 'resources/function/func-reset-errors.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Index TR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index TR</title>
+
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css" />
   <link rel="stylesheet" type="text/css" href="resources/css/base.css" />
   <link rel="stylesheet" type="text/css" href="resources/css/nav.css" />
@@ -11,24 +17,6 @@
   <link rel="stylesheet" type="text/css" href="resources/css/index.css" />
 </head>
 <body>
-<div id="top-wrap">
-    <nav>
-        <ul>
-            <li><a class="current-page" href="index.html">Index</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="recipes-meatballs.html">Meatballs</a></li>
-            <li><a href="recipes-pancakes.html">Pancakes</a></li>
-        </ul>
-        <div class="dropdown">  <button class="dropbtn">Navigation</button>
-          <div class="dropdown-content">
-            <a href="index.html">Index</a>
-            <a href="calendar.html">Calendar</a>
-            <a href="recipes-meatballs.html">Meatballs</a>
-            <a href="recipes-pancakes.html">Pancakes</a>
-          </div>
-        </div>
-    </nav>
-</div>
 
 <div class="page-wrap">
   <div class="text-wrap">
@@ -51,9 +39,7 @@
         Check out our calendar filled with the best Tasty Recipes has to offer!<br />
         <a href="calendar.html">Go to calendar</a>!</p>
       </div>
-
       <figure><img src="resources/images/manyfood.jpg" alt="A cornucopia of delicious food" /> </figure>
-
     </section>
   </div>
 </div>

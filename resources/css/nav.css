@@ -10,9 +10,8 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    /*font-family: Tahoma;*/
     font-family: inherit;
-    z-index: 1;
+
 }
 
 nav a {
@@ -36,3 +35,14 @@ nav li {
     list-style: none;
     display: inline-block;
 }
+
+.sign-in-status, .logout-btn {
+    float:left;
+    font-size: 1em;
+    color: whitesmoke;
+    padding-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
