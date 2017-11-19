@@ -26,6 +26,7 @@ if (isset($_POST['submitLogin'])) {
             exit();
 
         } else {
+            $row = mysqli_fetch_assoc($result);
             $_SESSION['userId'] = $row['user_id'];
             $_SESSION['userName'] = $row['user_name'];
             $_SESSION['userPassword'] = $row['user_password'];
