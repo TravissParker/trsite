@@ -26,21 +26,11 @@
                 exit();
 
             } else {
-                //How is below evaluated??
-                if ($row = mysqli_fetch_assoc($result)) {
-                    //This whole check is unneccssary since we extract user AND pw match
-                    if ($password != $row['user_password']) {
-                        header("Location: ../../login.php?login=failedP");
-                        exit();
-
-                    } elseif ($password == $row['user_password']) {
-                        $_SESSION['userId'] = $row['user_id'];
-                        $_SESSION['userName'] = $row['user_name'];
-                        $_SESSION['userPassword'] = $row['user_password'];
-                        header("Location: ../../index.php?login=success");
-                        exit();
-                    }
-                }
+                $_SESSION['userId'] = $row['user_id'];
+                $_SESSION['userName'] = $row['user_name'];
+                $_SESSION['userPassword'] = $row['user_password'];
+                header("Location: ../../index.php?login=success");
+                exit();
             }
         }
 
