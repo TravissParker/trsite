@@ -9,7 +9,8 @@ echo "<div class='comment-wrap'>
 
 //If user is signed in => show text area
 if (isset($_SESSION['userId'])) {
-    echo "<form method='post' action='".setComment($conn)."'>
+      setComment($conn);
+    echo "<form method='post' action=''>
         <input type='hidden' name='submittingUser' value='".$_SESSION['userName']."'>
         <input type='hidden' name='date' value='". date('Y-m-d H:i:s') ."'>
         <input type='hidden' name='recipe' value='".$_SERVER['REQUEST_URI']."'>
